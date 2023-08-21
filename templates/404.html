@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/404.css' %}">
+{% endblock link %}
+
+{% block title %}
+	Post
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div class="p404">
+			<h1>404 Page not found</h1>
+		</div>
+	</div>
+{% endblock content %}

@@ -1,0 +1,40 @@
+#link-contact{
+	border-color:coral;
+	color: coral;
+}
+form{
+	border-radius: 4px;
+	padding: 20px 15px;
+	background-color: coral;
+}
+form h1{
+	text-align: center;
+}
+p{
+	font-family: consolas;
+	font-size: 20px;
+	margin-top: 7px;
+}
+input,textarea{
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	border: 2px solid #123456;
+	border-radius: 4px;
+	font-size: 20px;
+	font-family: consolas;
+}
+form button{
+	width: 100%;
+	border:none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 22px;
+	padding: 8px 0;
+	margin: 5px 0;
+	background-color: #234567;
+	color: white;
+}
+form button:hover{
+	background-color: #345678;
+}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+{% endblock link %}
+
+{% block title %}
+	Blog
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div>
+			{% for post in posts %}
+			<div class="card">
+				<p class="title"><a href="{% url 'detail' post.id %}">{{ post.title }}</a></p><hr>
+				<p class="summary">{{ post.summary }}<br>{{ post.data.date }}</p><hr>
+							
+				<div class="bottom">
+					<a href="{% url 'detail' post.id %}">O'qish</a>
+					<div class="clr"></div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="paginations">
+			<form method="GET">
+				<button  
+				class="btn {% if previous is 0 %} disabled {%endif%}" 
+				type="submit" name="page" value="{{ previous }}" 
+				{% if previous is 0 %} disabled {%endif%}>previous</button>
+
+				{% for item in count %}
+					<button  
+					class="btn {% if page == item %} disabled {%endif%}" 
+					type="submit" name="page" value="{{ item }}" 
+					{% if page == item %} disabled {%endif%}>{{ item }}</button>
+				{% endfor %}
+
+				<button 
+				class="btn {% if not next %} disabled {%endif%}" 
+				type="submit" name="page" value="{{next}}" 
+				{% if not next %} disabled {%endif%}>next</button>
+			</form>
+		</div>
+	</div>
+{% endblock content %}

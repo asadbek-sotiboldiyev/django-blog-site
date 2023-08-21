@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/contacted.css' %}">
+{% endblock link %}
+
+{% block title %}
+	Contact
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div class="block">
+			<h1>{{name}} habaringiz adminga yetkazildi!</h1>
+			<h2>Admin {{ email }} orqali siz bilan bo'glanadi.</h2>
+			<hr>
+			<a href="{% url 'blog' %}" class="btn-dark">Blogga qaytish</a>
+		</div>
+	</div>
+{% endblock content %}

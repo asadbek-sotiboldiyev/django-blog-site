@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock link %}
+{% block title %}
+	Home
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+		<div class="jumbotron">
+			<h1>Assalomu aleykum</h1>
+			<p>AsAdbEk Sotiboldiyevning blog saytiga xush kelibsiz.</p>
+			<hr>
+			<a href="http://127.0.0.1:8000/blog" class="btn-dark">Blogga o'tish</a>
+		</div>
+	</div>
+{% endblock content %}

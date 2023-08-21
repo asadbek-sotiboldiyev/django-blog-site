@@ -1,0 +1,23 @@
+.block{
+	background-color: #eee;
+	margin: 20px 0;
+	text-align: center;
+	padding: 15px 0;
+	border: 4px solid coral;
+	border-radius: 10px;
+}
+.btn-dark{
+	border: none;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 10px;
+	color: white;
+	background-color: #234567;
+	padding: 5px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+hr{
+	margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+#link-blog{
+	border-color:coral;
+	color: coral;
+}
+.card{
+	border: 0px solid black;
+	margin: 8px 0.5%;
+	border-radius: 5px;
+	box-shadow: 0 0 3px black;
+	display: inline-block;
+	width: 48.5%;
+	background-color: white;
+	float: left;
+}
+@media(max-width:750px){
+	.card{
+		width: 100%;
+	}
+}
+p{
+	font-size: 21px;
+}
+.summary,.bottom{
+	padding: 5px 20px;
+}
+.title{
+	padding: 10px 20px;
+}
+.hr{
+	border-bottom: 1px solid #999;
+	margin: 0 20px;
+}
+.summary{
+}
+.bottom{
+	background-color: #ccccccaa;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.bottom a{
+	font-size: 18px;
+	display: inline-block;
+	color: white;
+	background-color: #234567;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.paginations{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.paginations form{
+	background-color: #ff7f50cc;
+	padding: 5px 20px;
+	border-radius: 5px;
+}
+
+.btn{
+	font-size: 18px;
+	padding: 6px 15px;
+	margin: 2px;
+	border: none;
+	color: white;
+	background-color: #345678;
+	border-radius: 4px;
+	box-shadow: 0 0 4px 1px white;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #6789ab;
+}
+.disabled{
+	background-color: #6789ab;
+}

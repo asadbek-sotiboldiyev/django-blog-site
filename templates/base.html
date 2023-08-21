@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	{% block link %}
+	{% endblock link %}
+	<title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+
+	<header>
+	<div class="container">
+		<h1><a href="{% url 'home' %}">AsAdbEk<span>'s blog</span></a></h1>
+		<nav>
+			<a href="" id="link-about">About</a>
+			<a href="{% url 'blog' %}" id="link-blog">Blog</a>
+			<a href="{% url 'contact' %}" id="link-contact">Contact</a>
+		</nav>
+		<div class="clr"></div>
+	</div>
+	</header>
+	
+	{% block content %}
+	{% endblock content %}
+
+</body>
+</html>

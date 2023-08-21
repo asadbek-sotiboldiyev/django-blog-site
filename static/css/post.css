@@ -1,0 +1,47 @@
+.card{
+	border: 0px solid black;
+	border-radius: 5px;
+	box-shadow: 0 0 3px black;
+	width: 100%;
+	background-color: white;
+	float: left;
+}
+.body,.bottom{
+	padding: 10px 20px;
+}
+.title{
+	padding: 10px 20px;
+	font-size: 25px;
+}
+.hr{
+	border-bottom: 1px solid #999;
+	margin: 0 20px;
+}
+.body{
+	font-size: 25px;
+}
+.bottom{
+	font-size: 20px;
+	background-color: #ccccccaa;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.btn-dark,.btn-danger{
+	font-size: 18px;
+	display: inline-block;
+	color: white;
+	background-color: #234567;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+.btn-danger{
+	font-size: 18px;
+	display: inline-block;
+	color: white;
+	background-color: #cf0000;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}

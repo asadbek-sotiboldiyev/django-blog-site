@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/delete.css' %}">
+{% endblock link %}
+
+{% block title %}
+	Delete
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<form method="POST">{% csrf_token %}
+			<h1 class="title">{{ post.title }} ni o'chirasizmi?</h1>
+			<hr>
+			<button type="submit" class="btn-dark">O'chirish</button>
+			<a href="{% url 'detail' post.id %}" class="btn-danger">Bekor qilish</a>
+		</form>
+	</div>
+{% endblock content %}

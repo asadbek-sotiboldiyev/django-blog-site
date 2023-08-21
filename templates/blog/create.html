@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block link %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock link %}
+
+{% block title %}
+	Create
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<br>
+		<form method="POST">
+			{% csrf_token %}
+			<h1>Post qo'shish +</h1>
+			<p>Mavzu</p>
+			<input type="text" name="title" placeholder="Mavzu...">
+			<p>Qisqacha</p>
+			<input type="text" name="summary" placeholder="Qisqacha...">
+			<p>Matn</p>
+			<textarea name="body" placeholder="Matn..." rows="5"></textarea>
+			<button type="submit">Qo'shish</button>
+		</form>
+	</div>
+{% endblock content %}
